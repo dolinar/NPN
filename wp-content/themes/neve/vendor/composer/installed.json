@@ -42,5 +42,6 @@
             "install-path": "../codeinwp/themeisle-sdk"
         }
     ],
-    "dev": false
+    "dev": false,
+    "dev-package-names": []
 }

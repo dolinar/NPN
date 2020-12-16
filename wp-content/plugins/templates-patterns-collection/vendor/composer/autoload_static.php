@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit860532b18175cf75d2b942ebcd6f4b57
+class ComposerStaticInitbc0ea3454a11d1cfb300c7c32b248525
 {
     public static $prefixLengthsPsr4 = array (
         'T' => 
@@ -21,7 +21,9 @@ class ComposerStaticInit860532b18175cf75d2b942ebcd6f4b57
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'TIOB\\Admin' => __DIR__ . '/../..' . '/includes/Admin.php',
+        'TIOB\\Editor' => __DIR__ . '/../..' . '/includes/Editor.php',
         'TIOB\\Importers\\Content_Importer' => __DIR__ . '/../..' . '/includes/Importers/Content_Importer.php',
         'TIOB\\Importers\\Helpers\\Helper' => __DIR__ . '/../..' . '/includes/Importers/Helpers/Helper.php',
         'TIOB\\Importers\\Helpers\\Importer_Alterator' => __DIR__ . '/../..' . '/includes/Importers/Helpers/Importer_Alterator.php',
@@ -48,9 +50,9 @@ class ComposerStaticInit860532b18175cf75d2b942ebcd6f4b57
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit860532b18175cf75d2b942ebcd6f4b57::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit860532b18175cf75d2b942ebcd6f4b57::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit860532b18175cf75d2b942ebcd6f4b57::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbc0ea3454a11d1cfb300c7c32b248525::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbc0ea3454a11d1cfb300c7c32b248525::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbc0ea3454a11d1cfb300c7c32b248525::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -6,7 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'TIOB\\Admin' => $baseDir . '/includes/Admin.php',
+    'TIOB\\Editor' => $baseDir . '/includes/Editor.php',
     'TIOB\\Importers\\Content_Importer' => $baseDir . '/includes/Importers/Content_Importer.php',
     'TIOB\\Importers\\Helpers\\Helper' => $baseDir . '/includes/Importers/Helpers/Helper.php',
     'TIOB\\Importers\\Helpers\\Importer_Alterator' => $baseDir . '/includes/Importers/Helpers/Importer_Alterator.php',
